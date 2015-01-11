@@ -27,4 +27,22 @@ iconfont(family, filename,font-icon-version)
          url(font-url(filename + ".ttf?v=#" + font-icon-version)) format("truetype"),
          url(font-url(filename + ".svg#fontawesomeregular?v=#" + font-icon-version)) format("svg")
 
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-qqzone:before {
+  content: "\f1d6";
+}
+.fa-github:before {
+  content: "\f09b";
+}
+.fa-analytics:before {
+  content: "\f1fe";
+}
+
 iconfont(font-icon-family,font-icon-filename,font-icon-version)

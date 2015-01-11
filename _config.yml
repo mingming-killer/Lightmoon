@@ -1,6 +1,7 @@
 ##### Menu
 menu:
   Home: /
+  Index:  /1986/12/20/文章索引
   Archives: /archives
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
@@ -11,8 +12,8 @@ menu:
 
 #### Widgets
 widgets: 
-- category
 - tag
+- links
 - rss
 ## provide six widgets:category,tag,rss,archive,tagcloud,links.
 ## modify links in `/layout/_widget/links.ejs`.
@@ -56,20 +57,19 @@ fancybox: false
 
 #### Author information
 author:
+  qqzone: 544630305    ## e.g. xxxx for http://http://user.qzone.qq.com/xxxx
+  github: mingming-killer    ## e.g. A-limon for https://github.com/A-limon
   google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
-  intro_line1: "" ## eg: "Hello ,I'm Larry Page in Google."
-  intro_line2: "" ## eg: "This is my blog,believe it or not."
-  weibo:      ## e.g. 436062867 for http://weibo.com/436062867
-  twitter:    ## e.g. yangjiansky for https://twitter.com/yangjiansky
-  github:     ## e.g. A-limon for https://github.com/A-limon
+  weibo:     ## e.g. 436062867 for http://weibo.com/436062867
+  twitter:    ## e.g. yangjiansky for https://twitter.com/yangjiansky  
   facebook:   ## e.g. yangjian for https://favebook.com/yangjian
   tsina:      ## e.g. 1664838973  Your weibo ID,It will be used in share button.
   linkedin:   ## e.g. in/jeffweiner08 for https://www.linkedin.com/in/jeffweiner08
 
 #### Comment
 duoshuo: 
-  enable: false  ## duoshuo.com
-  short_name:    ## duoshuo short name.
+  enable: true  ## duoshuo.com
+  short_name: mingming  ## duoshuo short name.
 
 #### Share button
 jiathis:
@@ -83,6 +83,11 @@ google_analytics:
   id:   ## e.g. UA-1766729-8 your google analytics ID.
   site: ## e.g. yangjian.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
+## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
+
+baidu_analytics:
+  enable: true
+## if you want to use baidu analytics modify the baidu_analytics.ejs to your baidu code which in layout folder
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 
 #### Custom Search
