@@ -1,0 +1,25 @@
+<div class="commentlist">
+  <p class="asidetitle"><%= __('recentcomment') %></p>
+    <ul>
+      <ul class="ds-recent-comments" 
+        data-num-items="<%= theme.recentcomment.num_items %>" 
+        data-show-avatars="<%= theme.recentcomment.show_avatars %>" 
+        data-show-title="<%= theme.recentcomment.show_title %>"   
+        data-show-time="<%= theme.recentcomment.show_time %>" 
+        data-show-admin="<%= theme.recentcomment.show_admin %>" 
+        data-excerpt-length="<%= theme.recentcomment.comment_show_length %>">
+      </ul>
+      <!-- duoshou js begin load, one page only load once -->
+      <script type="text/javascript">
+      var duoshuoQuery = {short_name:"<%= theme.duoshuo.short_name %>"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = 'http://static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+      <!-- duoshou js load end -->
+    </ul>
+</div>
