@@ -3,6 +3,12 @@
     <ul>
       <li> <i class="fa fa-qqzone"></i> <a href="http://user.qzone.qq.com/<%=theme.author.qqzone %>" target="_blank"><%= __('qqzone') %></a></li>
       <li><i class="fa fa-github"></i> <a href="https://github.com/<%=theme.author.github %>" target="_blank"><%= __('github') %></a></li>
-      <li><i class="fa fa-analytics"></i> <a href="http://sitecenter.baidu.com" target="_blank"><%= __('analytics') %></a></li>
+      <% if	(theme.baidu_analytics.enable && theme.baidu_analytics.report_url){ %>
+        <% if	(theme.baidu_analytics.report_url){ %>
+          <li><i class="fa fa-analytics"></i> <a href="<%=theme.baidu_analytics.report_url %>" target="_blank"><%= __('analytics') %></a></li>
+        <% } else { %>
+          <li><i class="fa fa-analytics"></i> <a href="http://sitecenter.baidu.com" target="_blank"><%= __('analytics') %></a></li>
+        <% } %>
+      <% } %>
     </ul>
 </div>

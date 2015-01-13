@@ -101,8 +101,9 @@ google_analytics:
 
 baidu_analytics:
   enable: true
+  report_url: http://tongji.baidu.com/web/welcome/ico?s=fa045dbd45ffce238b146e00f91ba6a3
 ## if you want to use baidu analytics modify the baidu_analytics.ejs to your baidu code which in layout folder
-## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
+## if you open baidu report to 3rd web, you can set report_url, this will let you browse analytics without logo ^_^
 
 #### Custom Search
 google_cse: 
@@ -115,3 +116,8 @@ google_cse:
 ## title: search
 ## ---
 
+## in china i think you better use baidu search replace google search ... ...
+#### Baidu Search
+baidu_se:
+  enable: true
+  content: FiQ6x1eC3r  ## your baidu search verification content
