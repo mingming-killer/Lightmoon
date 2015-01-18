@@ -26,24 +26,37 @@
 					<% } %>
 					<li>
 					<% if (theme.google_cse&&theme.google_cse.enable){ %>
+
 					<form class="search" action="<%- config.root %>search/index.html" method="get" accept-charset="utf-8">
 						<label>Search</label>
 						<input type="text" id="search" autocomplete="off" name="q" maxlength="20" placeholder="<%= __('search') %>" />
 					</form>
+
 					<% } else if (theme.baidu_se && theme.baidu_se.enable){ %>
+
                       <form class="search" action=<%- theme.baidu_se.site %> target="_blank">
-                      <label>Search</label>
+                      <label><%= __('search') %></label>
                       <!--
                       <input name="s" type="hidden" value="<%= theme.baidu_se.id %>">
                       -->
                       <input name="s" type="hidden" value="716634113620076155">
                       <input type="text" name="q" size="30" placeholder="<%= __('search') %>"> <br>
+
+                      <% } else if (theme.swiftype_se&&theme.swiftype_se.enable){ %>
+
+						<form class="search" action="<%- config.root %>search/index.html" method="get" accept-charset="utf-8">
+						<label><%= __('search') %></label>
+						<input type="text" id="<%= theme.swiftype_se.input_selector %>" maxlength="20" placeholder="<%= __('search') %>" />
+						</form>
+
 					<% } else { %>
+
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
 						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="<%= __('search') %>" />
 						<input type="hidden" name="q" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
 					</form>
+
 					<% } %>
 					</li>
 				</ul>

@@ -42,4 +42,21 @@
 		<a href="<%= config.url %>" title="<%= config.title %>"><%= config.title %></a>
 		<% } %>
 		</p>
+
+  <!-- baidu search verification -->
+  <% if	(theme.baidu_se.enable){ %>
+    <meta name="baidu-site-verification" content="<%- theme.baidu_se.content %>" />
+  <% } %>
+
+  <!-- swiftype search verification -->
+  <% if	(theme.swiftype_se.enable){ %>
+    <script type="text/javascript">
+      (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+      (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+      e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+      })(window,document,'script','//s.swiftypecdn.com/install/v1/st.js','_st');
+      _st('install','<%- theme.swiftype_se.id %>');
+    </script>
+  <% } %>
+
 </div>
