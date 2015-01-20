@@ -22,3 +22,5 @@ analytics: 战斗力
 recentcomment: 最近冒泡的小伙伴 ╰(●'◡'●)╮
 wait_search_result: 正在加载搜索结果，请稍等 ... ...
 markdown_help: Makrdown
+prev_pos: 上一篇
+next_pos: 下一篇
