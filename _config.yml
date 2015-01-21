@@ -124,16 +124,17 @@ google_cse:
 ## in china i think you better use baidu search replace google search ... ...
 #### Baidu Search
 baidu_se:
-  enable: false
+  enable: true
   content: w1BSX6yZ9k  ## your baidu search verification content
 #  id: 716634113620076155  ## your baidu search id
 # I don't how fuck the header.ejs read this id is wrong, now you must to modify the id in header.ejs >_<
   site: http://search.light3moon.com/cse/search  #your can change your site instead the default site
 
-## suck baidu search, it's not work for me, so we have find another one ... ...
+## suck this !! it' have an error in return search post with me >_<
+## oh, the baidu search is work now ... haha ^_^
 #### Swiftype Search
 swiftype_se:
-  enable: true
+  enable: false
   id: -JeYBvt8MzpWoVF8MxE3  ## your swiftype search user id
   input_selector: st-search-input  ## your swiftype search input selector, config in swiftype web
   results_selector: st-results-container ## your swiftype search results container selector, config in swiftype web
