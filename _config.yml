@@ -17,6 +17,7 @@ menu_title:
 
 #### Widgets
 widgets: 
+- category
 - tag
 - links
 - recentcomment
