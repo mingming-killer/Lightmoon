@@ -1,19 +1,19 @@
 // More theme here http//softwaremaniacs.org/media/soft/highlight/test.html
 // Just change those colors
 // https//github.com/chriskempson/tomorrow-theme
-highlight-background = #1d1f21
-highlight-current-line = #282a2e
-highlight-line-numbers = #666
-highlight-selection = #373b41
-highlight-foreground = #c5c8c6
-highlight-comment = #8be036
-highlight-red = #cc6666
-highlight-orange = #de935f
-highlight-yellow = #f0c674
-highlight-green = #b5bd68
-highlight-aqua = #8abeb7
-highlight-blue = #81a2be
-highlight-purple = #b294bb
+highlight-background = #bfbfbf
+highlight-foreground = #170000
+highlight-current-line = #efe8e8
+highlight-line-numbers = #666666
+highlight-selection = #eaeaea
+highlight-comment = #3f807a
+highlight-keyword = #8b0755
+highlight-number = #2a00fd
+highlight-string = #2a00fd
+highlight-class = #170000
+highlight-tag = #cc6666
+highlight-css = #8abeb7
+highlight-python = #81a2be
 
 $code-block
   background highlight-background
@@ -117,7 +117,7 @@ pre
   .id
   .class
   .pseudo 
-    color highlight-red
+    color highlight-tag
   .number
   .preprocessor
   .pragma
@@ -125,19 +125,19 @@ pre
   .literal
   .params
   .constant 
-    color highlight-orange
+    color highlight-number
   .class .title  
   .rules .attribute
-    color highlight-yellow
+    color highlight-class
   .string
   .value
   .inheritance
   .header
   .symbol
   .cdata
-    color highlight-green
+    color highlight-string
   .css .hexcolor 
-    color highlight-aqua
+    color highlight-css
   .function
   .function .title
   .decorator
@@ -146,10 +146,10 @@ pre
   .perl .sub
   .javascript .title
   .coffeescript .title
-    color highlight-blue
+    color highlight-python
   .keyword
   .javascript .function 
-    color highlight-purple
+    color highlight-keyword
   .coffeescript .javascript
   .javascript .xml
   .tex .formula
