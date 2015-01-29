@@ -1,5 +1,8 @@
 <% if (theme.duoshuo.enable && page.comments){ %>
 <section class="comment">
-	<div class="ds-thread" data-thread-key="<%= item.path %>" data-title="<%= item.title %>" data-author-key="<%= theme.duoshuo.short_name %>"></div>
+	<div class="ds-thread" data-thread-key="<%= item.path %>" data-title="<%= item.title %>" 
+      data-author-key="<%= theme.duoshuo.short_name %>" data-limit=<%= theme.duoshuo.one_page_comment %>
+      data-url="<%= theme.duoshuo.comment_url %><%= item.path %>">
+    </div>
 </section>
 <% } %>
