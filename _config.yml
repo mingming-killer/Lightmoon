@@ -82,7 +82,7 @@ duoshuo:
 
 #### recent comment by duoshao
 recentcomment:
-  num_items: 5  ## how num recent comment will be show.
+  num_items: 6  ## how num recent comment will be show.
   show_avatars: 1  ## 1 to show comment avatars.
 #  if want to adjust duoshou recent comment avatars style, modify it in aside.styl(this is default)
 # (avatars)width: 30px 
