@@ -221,5 +221,12 @@
         color color-theme
         transition color .25s
 
-#ds-recent-comments .ds-avatar img {width: 30px !important; height: 30px !important; border-radius: 5px !important;}
+#ds-recent-comments .ds-avatar img {width: 30px !important; height: 30px !important; border-radius: 5px !important; 
+-webkit-transition: 0.0s !important;
+-webkit-transition: -webkit-transform 0.0s ease-out !important;
+transition: transform 0.0s ease-out !important;}
+
+#ds-recent-comments .ds-avatar img:hover{transform: rotateZ(0deg) !important; 
+-webkit-transform: rotateZ(0deg) !important;
+-moz-transform: rotateZ(0deg) !important;}
 
