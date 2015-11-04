@@ -21,9 +21,11 @@ widgets:
 - tag
 - links
 - recentcomment
-- rss
+- friendlinks
+#- rss
 ## provide six widgets:category,tag,rss,archive,tagcloud,links.
 ## modify links in `/layout/_widget/links.ejs`.
+## modify links in `/layout/_widget/friendlinks.ejs`.
 
 #### RSS
 rss: ## RSS address.
