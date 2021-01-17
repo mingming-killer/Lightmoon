@@ -11,8 +11,8 @@ archive_b: 归档：%s
 page: 第 %d 页
 recent_posts: 近期文章
 menu: 菜单
-links:  哥的后勤处 o(^▽^)o
-friendlinks: 友情链接 o(^▽^)o
+links:  我的链接
+friendlinks: 友情链接
 chao_blogs: 桃园小七的博客
 zhuang_blogs: Dongka的博客
 rss: RSS 订阅
@@ -21,8 +21,8 @@ hidesidebar: 隐藏侧边栏
 updated: 更新日期
 qqzone: QQ 空间
 github: GitHub
-analytics: 战斗力
-recentcomment: 最近冒泡的小伙伴 ╰(●'◡'●)╮
+analytics: 网站数据统计
+recentcomment: 最近评论
 wait_search_result: 正在加载搜索结果，请稍等 ... ...
 markdown_help: Makrdown
 prev_pos: 上一篇

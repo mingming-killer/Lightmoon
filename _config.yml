@@ -20,7 +20,7 @@ widgets:
 - category
 - tag
 - links
-- recentcomment
+#- recentcomment
 - friendlinks
 #- rss
 ## provide six widgets:category,tag,rss,archive,tagcloud,links.
@@ -66,7 +66,7 @@ fancybox: false
 
 #### Author information
 author:
-  qqzone: 544630305    ## e.g. xxxx for http://http://user.qzone.qq.com/xxxx
+  qqzone:    ## e.g. xxxx for http://http://user.qzone.qq.com/xxxx
   github: mingming-killer    ## e.g. A-limon for https://github.com/A-limon
   google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
   weibo:     ## e.g. 436062867 for http://weibo.com/436062867
@@ -77,7 +77,7 @@ author:
 
 #### Comment
 duoshuo: 
-  enable: true  ## duoshuo.com
+  enable: false  ## duoshuo.com
   short_name: mingming  ## duoshuo short name.
   comment_url: light3moon.com/ ## you should write your site web url
   one_page_comment: 10 ## duoshuo one page show comment number 1 ~ 200

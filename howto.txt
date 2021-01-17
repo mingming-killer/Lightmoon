@@ -1,0 +1,52 @@
+source path:
+
+$which hexo
+
+find the hexo code path, e.g:
+/home/mingming/.nvm/v0.10.35/bin/hexo
+
+and then 
+$ls -l 
+find the hexo code real path, e.g:
+hexo -> ../lib/node_modules/hexo/bin/hexo
+
+and the the /home/mingming/.nvm/v0.10.35/lib/node_modules/hexo is the hexo code path, we can apply some funcation patched on it. enjoy it ^_^
+
+
+=============================
+
+hexo:
+
+1. server:
+
+hexo server
+
+就可以在 localhost:4000/ 查看你的博客。
+
+
+2. generate & deploy:
+
+$ hexo generate
+$ hexo deploy
+
+
+=============================
+
+lightmoon folder:
+
+1. hexo init <lightmoon>: to init blogs code
+2. themes/Lightmoon: is git repo: Lightmoon hexo themes base by Pacman custom by mingming
+3. source: link to git repo: blogs-code/source
+4. themes/Lightmoon/source/img/pics: link to git reop: blogs-code/pics
+5. _config.yml: link to git repo: blogs-code/_config.yml
+
+
+=============================
+
+1. lndir: (dir folder)
+lndir <target> <src>
+
+2. ln -s: (single file)
+ln -s <target> <src>
+
+
